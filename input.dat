@@ -1,0 +1,88 @@
+---------------------------------------------------------------------
+--              Projekt:  konti                                    --
+--              Datei:    input.dat                                --
+--              Version:  14.04.2021                               --
+---------------------------------------------------------------------
+ 0.0      xa    Linke Intervallgrenze
+ 6.0      xe    Rechte Intervallgrenze
+---------------------------------------------------------------------
+ 0.0      ta    Anfangszeit
+ 0.01     dt    Zeitschrittweite
+---------------------------------------------------------------------
+  0       rF    Dichtefunktion für rho(x)
+---------------------------------------------------------------------
+ 0.0      r1    Lageparameter x-Richtung    Anfangsfunktion rho(x)
+ 0.0      r2    Lageparameter r-Richtung
+ 1.0      r3    Formparameter x-Richtung
+ 0.0      r4    Formparameter r-Richtung
+ 1.0      r5    Summand bei xa
+ 0.0      r6    Summand bei xe
+---------------------------------------------------------------------
+  4       uF    Anfangsfunktion für u(x)
+---------------------------------------------------------------------
+ 4.0      u1    Lageparameter x-Richtung    Geschwindigkeitsfeld u(x)
+ 1.0      u2    Lageparameter u-Richtung
+ 1.0      u3    Formparameter x-Richtung
+ 1.0      u4    Formparameter u-Richtung
+ 0.0      u5    Summand bei xa
+ 0.0      u6    Summand bei xe
+---------------------------------------------------------------------
+  8       wF    Randfunktion West für rho(t)
+---------------------------------------------------------------------
+ 0.0      w1    Lageparameter t-Richtung    Dynamischer Eingang West
+ 1.0      w2    Lageparameter u-Richtung
+ 1.0      w3    Formparameter t-Richtung
+ 0.5      w4    Formparameter u-Richtung
+---------------------------------------------------------------------
+  0       oF    Randfunktion Ost für rho(t)
+---------------------------------------------------------------------
+ 0.0      o1    Lageparameter t-Richtung    Dynamischer Eingang Ost
+ 0.0      o2    Lageparameter u-Richtung
+ 1.0      o3    Formparameter t-Richtung
+ 1.0      o4    Formparameter u-Richtung
+---------------------------------------------------------------------
+    538   imax  Anzahl der räumlichen Teilintervalle
+    200   nmax  Anzahl der zeitlichen Teilintervalle
+---------------------------------------------------------------------
+ 1000     IMAX  Maximale Anzahl innerer Iterationen
+ 1.0E-30  delta Genauigkeit für den Defekt
+---------------------------------------------------------------------
+ 1        mesh  Intern: 0  Extern: 1
+---------------------------------------------------------------------
+ 1        RBW   Randbedingung West
+ 5        RBO   Randbedingung Ost
+---------------------------------------------------------------------
+ 0        ED    Ergebnisse darstellen
+ 0        AZ    Anfangszustand
+---------------------------------------------------------------------
+
+Liste der Randbedingungen für RBW und RBO
+
+         0  =  Fester Rand
+         1  =  Dirichlet Randbedingung
+         2  =  Neumann Randbedingung
+         3  =  Periodische Randbedingung
+         4  =  Dynamische Randbedingung
+         5  =  Outlet Randbedingung
+
+Liste der Funktionen für wF, oF, cF, uF 
+
+         0  =  Konstante Funktion
+         1  =  Lineare Funktion
+         2  =  Parabelfunktion
+         3  =  Rechteckfunktion
+         4  =  Dreieckfunktion
+         5  =  Saegezahnfunktion
+         6  =  Linearrampe
+         7  =  Cosinusrampe
+         8  =  Sinusfunktion
+         9  =  Cosinusfunktion
+        10  =  Exponentialfunktion
+        11  =  Gaussfunktion
+        12  =  Diracfunktion
+        13  =  Heavisidefunktion
+        14  =  CosPeakfunktion
+        15  =  UserDefined 01
+        16  =  UserDefined 02
+
+---------------------------------------------------------------------
