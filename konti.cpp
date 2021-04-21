@@ -1,17 +1,21 @@
 
    /* -----------------------------------------------------------------------
 
-      Programm:  konti
-
-      Sprache:   ANSI C++
-
-      Autor:     Martin Petry
-
-      E-Mail:    martin.petry@fh-bielefeld.de
-
-      Erstellt:  09.04.2021
-
-      Geändert:  14.04.2021
+      Programm:   konti
+                  
+      Sprache:    ANSI C++
+                  
+      Autor:      Martin Petry
+                  
+      E-Mail:     martin.petry@fh-bielefeld.de
+                  
+      Repository: https://github.com/cfd-bielefeld/konti-1d-implizit
+                  
+      Lizenz:     GNU GPL v3.0
+                  
+      Erstellt:   09.04.2021
+                  
+      Geändert:   19.04.2021
 
       -----------------------------------------------------------------------
 
@@ -20,9 +24,10 @@
                            rho_t + (rho u)_x = 0
 
       für ein gegebenes stationäres Geschwindigkeitsfeld u(x) auf einem
-      Zell-zentrierten strukturierten Gitter. Die Berechnung der Massen-
-      ströme erfolgt durch Verwendung analytischer Formeln zur Vermeidung
-      von if-Abfragen.
+      Zell-zentrierten strukturierten Gitter.
+
+      Die Berechnung der Massenströme erfolgt durch Verwendung analytischer
+      Formeln zur Vermeidung von if-Abfragen.
 
       Da das Geschwindigkeitsfeld vorgegeben ist, wird keine Rückwirkung
       der Dichte auf die Geschwindigkeit gemäß Navier-Stokes Gleichung
@@ -73,7 +78,7 @@
 
    /* Versionsnummer definieren */
 
-      string CppVersion = "14.04.2021";
+      string CppVersion = "19.04.2021";
 
    /* ----------------------------------------------------------------------- */
 
