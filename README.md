@@ -1,2 +1,2 @@
 # konti-1d-implizit
-Numerische Lösung der 1D-Kontinuitätsgleichung mit einem impliziten Euler-Verfahren
+Numerische Lösung der instationären 1D-Kontinuitätsgleichung mit einem Euler-Verfahren
